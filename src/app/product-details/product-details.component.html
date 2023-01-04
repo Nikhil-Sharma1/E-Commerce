@@ -1,0 +1,27 @@
+<div class="row product-details mt-5">
+    <div class="col-sm-6">
+        <img class="img_detail"src="{{product_details?.image_url}}">
+    </div>
+    <div class="col-sm-6">
+        <div class="details">
+            <h1>{{product_details?.name}}</h1>
+            <h3>Price: {{product_details?.price}}</h3>
+            <div>
+                Color:
+                <h5 [style.backgroundColor]="product_details?.color" class="product_color"></h5>
+            </div>
+            <h6>Category: {{product_details?.category}}</h6>
+            <h6>Description: {{product_details?.description}}</h6>
+            <div class="justify-content-between">
+            <button class="action_button">Buy Now</button>
+            <button *ngIf="removeCart" class="action_button" (click)="RemoveFromCart(product_details?.id)">Remove From Cart</button>
+            <button *ngIf="!removeCart" class="action_button" (click)="AddToCart()">Add To Cart</button>
+        </div>
+            <div class="quantity-group mt-3 ps-0 p-2 ">
+                <button (click)="handleClick('min')" [disabled]="product_quantity<=1">-</button>
+                <input type="text" class="text-center" [ngModel]="product_quantity"/>
+                <button (click)="handleClick('plus')"[disabled]="product_quantity>=20">+</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+{
+    "typescript.tsdk": "/home/nikhil/.nvm/versions/node/v14.15.5/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": false
+}

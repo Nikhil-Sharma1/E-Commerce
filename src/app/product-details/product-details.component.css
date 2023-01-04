@@ -1,0 +1,31 @@
+.img_detail{
+    object-fit: contain;
+    width: 100%;
+    height: 400px;
+}
+.product_color{
+    border: 3px solid #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.product-details h1{
+    color: blueviolet;
+}
+.product-details h1, .product-details h5, .product-details h6{
+    margin-bottom: 20px;
+}
+.product-details h6{
+    font-weight: 400;
+}
+
+.action_button{
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    height: 40px;
+    padding: 5px;
+}
+
+.quantity-group input{
+    width: 40px;
+}

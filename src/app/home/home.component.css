@@ -1,0 +1,33 @@
+.popular_img{
+    object-fit: contain;
+    height: 597px;
+    width: 100%;
+    background: #f7f4f4;
+    padding: 20px;
+    border-radius: 7px;
+}
+.trendy-img{
+    object-fit: contain;
+    height: 150px;
+    width: 100%;
+}
+
+.card-link{
+    font-size: 13px;
+}
+
+/* .card-div{
+    max-width: 300px;
+} */
+
+@media only screen and (min-width: 1200px) {
+    .card-link{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1325px) {
+    .card-link{
+        font-size: 13px;
+    }
+}

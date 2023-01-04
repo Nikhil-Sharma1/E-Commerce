@@ -1,0 +1,35 @@
+<nav class="nav mt-3 justify-content-between">
+    <h1 class="title"><a routerLink='/'><b>E-Commerce</b></a></h1>
+    <div class="search mx-5 my-2" *ngIf="menuType=='default'">
+        <input #searchInput type="text" (keyup)="searchProduct($event)" (blur)="hideSearch()"placeholder="Search for Products"/>
+        <button (click)="search(searchInput.value)">Search</button>
+        <div class="search_result" *ngIf="searchResult">
+            <ul class="p-0 m-0">
+                <li *ngFor="let item of searchResult">
+                    <a (mousedown)="redirectToDetails(item.id)">{{item.name | titlecase}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div [ngSwitch]="menuType" class="my-auto">
+        <ul class="d-inline-flex menu_items justify-content-between my-auto" *ngSwitchCase="'default'">
+            <li><a routerLink="/seller-auth" class="mx-2">Seller</a></li>
+            <li><a routerLink="/" class="mx-2">Home</a></li>
+            <li><a routerLink="user-auth" class="mx-2">Login/Sign-Up</a></li>
+            <li><a href="#" class="mx-2">Cart({{cartItems}})</a></li>
+        </ul>
+        <ul class="d-inline-flex menu_items justify-content-between my-auto" *ngSwitchCase="'user'">
+            <li><a routerLink="/seller-auth" class="mx-2">Seller</a></li>
+            <li><a routerLink="/" class="mx-2">Home</a></li>
+            <li><a href="#" class="mx-2">{{userName | titlecase}}</a></li>
+            <li><a (click)=logout_user() class="mx-2" role="button">Logout</a></li>
+            <li><a href="#" class="mx-2">Cart({{cartItems}})</a></li>
+        </ul>
+        <ul class="d-inline-flex menu_items justify-content-between my-auto" *ngSwitchCase="'seller'">
+            <li><a routerLink="/seller-add-product/0" class="mx-2">Add Product</a></li>
+            <li><a routerLink="/seller-home" class="mx-2">List</a></li>
+            <li><a (click)=logout_seller() class="mx-2" role="button">Logout</a></li>
+            <li><a href="#" class="mx-2">{{sellerName | titlecase}}</a></li>
+        </ul>
+    </div>
+</nav>

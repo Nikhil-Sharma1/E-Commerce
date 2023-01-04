@@ -1,0 +1,14 @@
+body{
+    font-family: sans-serif;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: black !important;
+    border: 5px !important;
+    width: 2rem;
+    height: 2rem;
+}
+.carousel-caption{
+    background-color: #00000082;
+    border-radius: 5px;
+    size: 2px;
+}
