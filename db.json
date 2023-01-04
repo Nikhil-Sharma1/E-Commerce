@@ -1,0 +1,116 @@
+{
+  "seller": [
+    {
+      "f_name": "Nikhil",
+      "l_name": "Sharma",
+      "email": "nikhilsharma5930684@gmail.com",
+      "phone": "0821977436",
+      "password": "nik",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "samsung M40",
+      "price": "23000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "Effective and reliable device",
+      "image_url": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m40-1.jpg",
+      "id": 1
+    },
+    {
+      "name": "samsung M42",
+      "price": "25000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "Reliable and Flexible to use",
+      "image_url": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m42-1.jpg",
+      "id": 2
+    },
+    {
+      "name": "iphone 12 pro max",
+      "price": "120000",
+      "color": "White",
+      "category": "Mobile",
+      "description": "Most popular And Effective Brand",
+      "image_url": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-max-2.jpg",
+      "id": 3
+    },
+    {
+      "name": "samsung M40",
+      "price": "23000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "Effective and reliable device",
+      "image_url": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m40-1.jpg",
+      "id": 4
+    },
+    {
+      "name": "samsung M42",
+      "price": "25000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "Reliable and Flexible to use",
+      "image_url": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m42-1.jpg",
+      "id": 5
+    },
+    {
+      "name": "iphone 12 pro max",
+      "price": "120000",
+      "color": "White",
+      "category": "Mobile",
+      "description": "Most popular And Effective Brand",
+      "image_url": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-max-2.jpg",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "f_name": "Nikhil",
+      "l_name": "Sharma",
+      "email": "nikhilsharma5930684@gmail.com",
+      "phone": "8219774362",
+      "password": "nik",
+      "id": 1
+    }
+  ],
+  "cart": [
+    {
+      "name": "samsung M40",
+      "price": "23000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "Effective and reliable device",
+      "image_url": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m40-1.jpg",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 1
+    },
+    {
+      "name": "samsung M40",
+      "price": "23000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "Effective and reliable device",
+      "image_url": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m40-1.jpg",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 2
+    },
+    {
+      "name": "samsung M42",
+      "price": "25000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "Reliable and Flexible to use",
+      "image_url": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m42-1.jpg",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 2,
+      "id": 3
+    }
+  ]
+}

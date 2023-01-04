@@ -1,0 +1,21 @@
+.sign-up, .sign-in{
+    align-items: center;
+    color: blueviolet;
+    flex-direction: column;
+    display: flex;
+}
+.sign-up .form_data, .sign-in .form_data{
+    max-width:400px
+}
+.sign-up input, .sign-in input{
+    border: 1px solid blueviolet;
+    height: 40px;
+    padding: 5px;
+    color: blueviolet;
+}
+.sign-up button, .sign-in button{
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    height: 40px;
+    padding: 5px;
+}

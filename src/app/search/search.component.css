@@ -1,0 +1,18 @@
+.search-item{
+    max-width: 800px;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    margin: auto;
+}
+.search-item p{
+    margin: 5px;
+}
+.search-img{
+    object-fit: contain;
+    height: 200px;
+    width: 100%;
+}
+.item-name{
+    color: blueviolet;
+    font-size: 24px;
+}

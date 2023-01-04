@@ -1,0 +1,21 @@
+.add-product{
+    align-items: center;
+    color: blueviolet;
+    flex-direction: column;
+    display: flex;
+}
+.add-product .form_data{
+    max-width:400px;
+}
+.add-product input, .add-product textarea{
+    border: 1px solid blueviolet;
+    height: 40px;
+    padding: 5px;
+    color: blueviolet;
+}
+.add-product button{
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    height: 40px;
+    padding: 5px;
+}

@@ -1,0 +1,44 @@
+<div >
+    <div class="add-product mt-2">
+        <h1 class="mt-2">{{id=='0'?'Add Product':'Update Product'}}</h1>
+        <p class="text-danger justify-content-center d-flex mb-0" *ngIf="authError!=''">{{authError}}</p>
+        <p class="text-success justify-content-center d-flex mb-0" *ngIf="addProductMessage!='' && id!='0'">{{addProductMessage}}<br></p>
+        <div class="col-lg-4 col-md-6 col-sm-8 form_data">
+            <div class="d-flex flex-column mt-2"> 
+                <label class="my-auto" class="my-auto">Product Name <span class="text-danger">*</span></label>
+                <input type="text" [(ngModel)]="product_details.name" placeholder="Enter Product Name"/>
+            </div>
+            <div class="d-flex flex-column mt-2">
+                <label class="my-auto">Price <span class="text-danger">*</span></label>
+                <input type="text" [(ngModel)]="product_details.price" placeholder="Enter Product Price"/>
+            </div>
+            <div class="d-flex flex-column mt-2">
+                <label class="my-auto">Color <span class="text-danger">*</span></label>
+                <input type="text" [(ngModel)]="product_details.color" placeholder="Enter Product Color"/>
+            </div>
+            <div class="d-flex flex-column mt-2">
+                <label class="my-auto">Category <span class="text-danger">*</span></label>
+                <input type="text" [(ngModel)]="product_details.category" placeholder="Enter Product Category"/>
+            </div>
+            <div class="d-flex flex-column mt-2">
+                <label class="my-auto">Description <span class="text-danger">*</span></label>
+                <textarea type="text" [(ngModel)]="product_details.description" placeholder="Enter Product Description"></textarea>
+            </div>
+            <div class="d-flex flex-column mt-2">
+                <label class="my-auto">Image Url <span class="text-danger">*</span></label>
+                <input type="text" [(ngModel)]="product_details.image_url" placeholder="Enter Product Image Url"/>
+            </div>
+            <ng-container *ngIf="id=='0'">
+                <div class="d-flex flex-column mt-4 mb-2" (click)="add_product()">
+                    <button class="form-button">Add Product</button>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="id!='0'">
+                <div class="d-flex flex-column mt-4 mb-2" (click)="update_product()">
+                    <button class="form-button">Update Product</button>
+                </div>
+            </ng-container>
+            
+        </div>
+    </div>
+</div>

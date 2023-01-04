@@ -1,0 +1,32 @@
+<div class="product_list">
+    <h1 class="mt-2">Product List</h1>
+    <p class="text-success justify-content-center d-flex mb-0" *ngIf="productMessage!=''">{{productMessage}}<br></p>
+    <div class="ml-auto mr-auto table-responsive mt-2" *ngIf="this.productList.length > 0">
+        <table class="table table-bordered w-100 table-fixed ml-auto mr-auto">
+            <thead>
+                <tr>
+                    <ng-container *ngFor="let col of columns">
+                        <th class="align-middle text-center">{{ col }}</th>
+                    </ng-container>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let item of productList; let i = index">
+                    <tr>
+                        <td class="align-middle text-center">{{i+1}}</td>
+                        <td class="align-middle text-center"><img src="{{item.image_url}}"></td>
+                        <td class="align-middle text-center">{{ item.name }}</td>
+                        <td class="align-middle text-center">{{ item.price }}</td>
+                        <td class="align-middle text-center">{{ item.color }}</td>
+                        <td class="align-middle text-center">{{ item.category }}</td>
+                        <td class="align-middle text-center">{{ item.description }}</td>
+                        <td class="align-middle text-center">
+                            <a routerLink="/seller-add-product/{{item.id}}" class="me-3"><fa-icon [icon]="edit_icon" role="button"></fa-icon></a>
+                            <fa-icon [icon]="delete_icon" (click)="delete_product(item.id)" role="button"></fa-icon>
+                        </td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</div>
